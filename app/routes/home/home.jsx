@@ -1,14 +1,31 @@
-import gamestackTexture2Large from '~/assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from '~/assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from '~/assets/gamestack-list.jpg';
-import gamestackTextureLarge from '~/assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from '~/assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from '~/assets/gamestack-login.jpg';
+import gamestackTexture2Large from '~/assets/bank2.png';
+import gamestackTexture2Placeholder from '~/assets/bank2.png';
+import gamestackTexture2 from '~/assets/bank2.png';
+import gamestackTextureLarge from '~/assets/bank1.png';
+import gamestackTexturePlaceholder from '~/assets/bank1.png';
+import gamestackTexture from '~/assets/bank1.png';
+
+import markscalTexture2Large from '~/assets/marks2.png';
+import markscalTexture2Placeholder from '~/assets/marks2.png';
+import markscalTexture2 from '~/assets/marks2.png';
+import markscalTextureLarge from '~/assets/marks1.png';
+import markscalTexturePlaceholder from '~/assets/marks1.png';
+import markscalTexture from '~/assets/marks1.png';
+
+import foodAppTexture2Large from '~/assets/food1.png';
+import foodAppTexture2Placeholder from '~/assets/food1.png';
+import foodAppTexture2 from '~/assets/food1.png';
+import foodAppTextureLarge from '~/assets/food2.png';
+import foodAppTexturePlaceholder from '~/assets/food2.png';
+import foodAppTexture from '~/assets/food2.png';
+
 import sliceTextureLarge from '~/assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
 import sliceTexture from '~/assets/slice-app.jpg';
-import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
+import sprTextureLarge from '~/assets/NeuroStack Landing Page.png';
+// import sprTextureLarge from '~/assets/spr-lesson-builder-dark-large.jpg';
+import sprTexturePlaceholder from '~/assets/NeuroStack Landing Page.png';
+// import sprTexturePlaceholder from '~/assets/spr-lesson-builder-dark-placeholder.jpg';
 import sprTexture from '~/assets/spr-lesson-builder-dark.jpg';
 import { Footer } from '~/components/footer';
 import { baseMeta } from '~/utils/meta';
@@ -53,6 +70,7 @@ export const Home = () => {
   const projectOne = useRef();
   const projectTwo = useRef();
   const projectThree = useRef();
+  const projectfour = useRef();
   const details = useRef();
 
   useEffect(() => {
@@ -103,8 +121,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Neurostack Landing Page"
+        description="Created a React-based landing page for NeuroStack with team info, project highlights, and contact section."
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
@@ -124,9 +142,9 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
+        title="Bank Application "
+        description="A modern banking app clone built with Java, Kotlin, and Jetpack Compose, featuring improved UI/UX and added functionalities."
+        buttonText="View Application"
         buttonLink="https://gamestack.hamishw.com"
         model={{
           type: 'phone',
@@ -140,6 +158,7 @@ export const Home = () => {
               srcSet: `${gamestackTexture2} 375w, ${gamestackTexture2Large} 750w`,
               placeholder: gamestackTexture2Placeholder,
             },
+            
           ],
         }}
       />
@@ -148,21 +167,53 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Food Catering"
+        description="An online food catering app built with Java and PHP, featuring a sleek UI, user login, and admin panel for managing orders and menus."
         buttonText="View project"
         buttonLink="/projects/slice"
         model={{
-          type: 'laptop',
+          type: 'phone',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: `${sliceTexture} 800w, ${sliceTextureLarge} 1920w`,
-              placeholder: sliceTexturePlaceholder,
+              srcSet: `${foodAppTexture} 375w, ${foodAppTextureLarge} 750w`,
+              placeholder: foodAppTexturePlaceholder,
+            },
+            {
+              srcSet: `${foodAppTexture2} 800w, ${foodAppTexture2Large} 1920w`,
+              placeholder: foodAppTexture2Placeholder,
             },
           ],
         }}
       />
+
+        <ProjectSummary
+        id="project-4"
+        alternate
+        sectionRef={projectfour}
+        visible={visibleSections.includes(projectTwo.current)}
+        index={4}
+        title="Student Marks Calculator"
+        description="A GTU marks calculator app built for students to quickly compute SPI, CPI, CGPA, and percentage with a clean and easy-to-use interface."
+        buttonText="View Application"
+        buttonLink="https://gamestack.hamishw.com"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: `${markscalTexture2} 375w, ${markscalTexture2Large} 750w`,
+              placeholder: markscalTexture2Placeholder,
+            },
+            {
+              srcSet: `${markscalTexture} 375w, ${markscalTextureLarge} 750w`,
+              placeholder: markscalTexturePlaceholder,
+            },
+            
+          ],
+        }}
+      />
+      
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}

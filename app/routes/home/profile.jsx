@@ -1,6 +1,7 @@
 import profileImgLarge from '~/assets/profile-large.jpg';
 import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
-import profileImg from '~/assets/profile.jpg';
+import profileImg from '~/assets/MyProfile.png';
+// import profileImg from '~/assets/profile.jpg';
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
@@ -16,23 +17,19 @@ import katakana from './katakana.svg';
 import styles from './profile.module.css';
 
 const ProfileText = ({ visible, titleId }) => (
-  <Fragment>
+
+<Fragment>
     <Heading className={styles.title} data-visible={visible} level={3} id={titleId}>
-      <DecoderText text="Hi there" start={visible} delay={500} />
+      <DecoderText text="Hello!" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      I’m <Link href="https://www.linkedin.com/in/developer-preet-ojha/">Preet Ojha</Link>, a skilled Android and Full-Stack Developer based in Canada. I specialize in crafting efficient mobile and web apps using Kotlin, Java, Android SDK, Jetpack Compose, and RESTful APIs. My portfolio features projects like the GTU Marks Calculator and Covid Application System, available on <Link href="https://play.google.com">Play Store</Link> and <Link href="https://github.com">GitHub</Link>, showcasing my ability to deliver scalable solutions. I hold a B.Tech in Computer Science and recently completed my Postgraduate Diploma in Full Stack Software Development at Lambton College, keeping me aligned with the latest industry trends.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      When I’m not coding, I’m exploring AWS, brainstorming new project ideas, enjoying movies, or engaging with the dev community. Let’s collaborate on something innovative—<Link href="/contact">reach out</Link>!
     </Text>
-  </Fragment>
+</Fragment>
+
 );
 
 export const Profile = ({ id, visible, sectionRef }) => {
@@ -62,7 +59,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 href="/contact"
                 icon="send"
               >
-                Send me a message
+                Catch me on YOUR Favorite SOCIAL Platforms!
               </Button>
             </div>
             <div className={styles.column}>

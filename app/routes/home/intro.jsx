@@ -76,16 +76,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                 <VisuallyHidden className={styles.label}>
                   {`${config.role} + ${introLabel}`}
                 </VisuallyHidden>
-                <span aria-hidden className={styles.row}>
-                  <span
-                    className={styles.word}
-                    data-status={status}
-                    style={cssProps({ delay: tokens.base.durationXS })}
-                  >
-                    {config.role}
-                  </span>
-                  <span className={styles.line} data-status={status} />
-                </span>
+                
                 <div className={styles.row}>
                   {disciplines.map(item => (
                     <Transition
@@ -99,7 +90,7 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                           aria-hidden
                           ref={nodeRef}
                           className={styles.word}
-                          data-plus={true}
+                          data-plus={false}
                           data-status={status}
                           style={cssProps({ delay: tokens.base.durationL })}
                         >
@@ -109,6 +100,18 @@ export function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
                     </Transition>
                   ))}
                 </div>
+
+                <span aria-hidden className={styles.row}>
+                  <span
+                    className={styles.word}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationXS })}
+                  >
+                    {config.role}
+                  </span>
+                  <span className={styles.line} data-status={status} />
+                </span>
+
               </Heading>
             </header>
             <RouterLink
