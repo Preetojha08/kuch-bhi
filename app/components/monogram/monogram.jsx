@@ -11,7 +11,7 @@ export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => 
       aria-hidden
       className={classes(styles.monogram, className)}
       width="64"
-      height="40"
+      height="30"
       viewBox="0 0 64 40"
       ref={ref}
       {...props}

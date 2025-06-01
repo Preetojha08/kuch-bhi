@@ -1,5 +1,5 @@
-import profileImgLarge from '~/assets/profile-large.jpg';
-import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
+import profileImgLarge from '~/assets/MyProfile.png';
+import profileImgPlaceholder from '~/assets/MyProfile.png';
 import profileImg from '~/assets/MyProfile.png';
 // import profileImg from '~/assets/profile.jpg';
 import { Button } from '~/components/button';
