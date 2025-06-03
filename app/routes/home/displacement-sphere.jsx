@@ -98,7 +98,7 @@ export const DisplacementSphere = props => {
     const ambientLight = new AmbientLight(0xffffff, theme === 'light' ? 2.7 : 0.4);
 
     dirLight.position.z = 200;
-    dirLight.position.x = 100;
+    dirLight.position.x = 50;
     dirLight.position.y = 100;
 
     lights.current = [dirLight, ambientLight];

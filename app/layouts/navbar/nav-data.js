@@ -9,10 +9,10 @@ export const navLinks = [
     label: 'About M3',
     pathname: '/#details',
   },
-  // {
-  //   label: 'Articles',
-  //   pathname: '/articles',
-  // },
+  {
+    label: 'Resume',
+    pathname: '/articles',
+  },
   {
     label: 'Reach Out',
     pathname: '/contact',
@@ -21,7 +21,7 @@ export const navLinks = [
 
 export const socialLinks = [
   {
-    label: 'Bluesky',
+    label: 'playstore',
     url: `https://bsky.app/profile/${config.bluesky}`,
     icon: 'playstore',
   },
