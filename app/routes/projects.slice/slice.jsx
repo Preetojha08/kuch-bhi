@@ -1,26 +1,33 @@
 import sliceAnnotationLarge from '~/assets/slice-annotation-large.png';
 import sliceAnnotationPlaceholder from '~/assets/slice-annotation-placeholder.png';
 import sliceAnnotation from '~/assets/slice-annotation.png';
-import sliceAppLarge from '~/assets/slice-app-large.jpg';
-import sliceAppPlaceholder from '~/assets/slice-app-placeholder.jpg';
-import sliceApp from '~/assets/slice-app.jpg';
-import sliceBackgroundBarLarge from '~/assets/slice-background-bar-large.jpg';
-import sliceBackgroundBarPlaceholder from '~/assets/slice-background-bar-placeholder.jpg';
-import sliceBackgroundBar from '~/assets/slice-background-bar.jpg';
-import sliceBackgroundLarge from '~/assets/slice-background-large.jpg';
-import sliceBackgroundPlaceholder from '~/assets/slice-background-placeholder.jpg';
-import sliceBackground from '~/assets/slice-background.jpg';
+
+import sliceAppLarge from '~/assets/NeuroStackLandingPage.png';
+import sliceAppPlaceholder from '~/assets/NeuroStackLandingPage.png';
+import sliceApp from '~/assets/NeuroStackLandingPage.png';  
+
+import sliceBackgroundBarLarge from '~/assets/NeuroStackblog.png';
+import sliceBackgroundBarPlaceholder from '~/assets/NeuroStackblog.png';
+import sliceBackgroundBar from '~/assets/NeuroStackblog.png';
+
+
+import sliceBackgroundLarge from '~/assets/NeuroStackBG.png';
+import sliceBackgroundPlaceholder from '~/assets/NeuroStackBG.png';
+import sliceBackground from '~/assets/NeuroStackBG.png';
+
 import sliceIrlPlaceholder from '~/assets/slice-irl-placeholder.jpg';
 import sliceIrl from '~/assets/slice-irl.jpg';
-import sliceSidebarAnnotationsLarge from '~/assets/slice-sidebar-annotations-large.png';
-import sliceSidebarAnnotationsPlaceholder from '~/assets/slice-sidebar-annotations-placeholder.png';
-import sliceSidebarAnnotations from '~/assets/slice-sidebar-annotations.png';
-import sliceSidebarLayersLarge from '~/assets/slice-sidebar-layers-large.png';
-import sliceSidebarLayersPlaceholder from '~/assets/slice-sidebar-layers-placeholder.png';
-import sliceSidebarLayers from '~/assets/slice-sidebar-layers.png';
-import sliceSlidesLarge from '~/assets/slice-slides-large.jpg';
-import sliceSlidesPlaceholder from '~/assets/slice-slides-placeholder.jpg';
-import sliceSlides from '~/assets/slice-slides.jpg';
+import sliceSidebarAnnotationsLarge from '~/assets/NeuroStackMG.png';
+import sliceSidebarAnnotationsPlaceholder from '~/assets/NeuroStackMG.png';
+import sliceSidebarAnnotations from '~/assets/NeuroStackMG.png';
+
+import sliceSidebarLayersLarge from '~/assets/NeuroStackAbout.png';
+import sliceSidebarLayersPlaceholder from '~/assets/NeuroStackAbout.png';
+import sliceSidebarLayers from '~/assets/NeuroStackAbout.png';
+
+import sliceSlidesLarge from '~/assets/NeuroStackSS.png';
+import sliceSlidesPlaceholder from '~/assets/NeuroStackSS.png';
+import sliceSlides from '~/assets/NeuroStackSS.png';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
 import {
@@ -40,10 +47,10 @@ import { media } from '~/utils/style';
 import { baseMeta } from '~/utils/meta';
 import styles from './slice.module.css';
 
-const title = 'Biomedical image collaboration';
+const title = 'NeuroStack Landing Page';
 const description =
-  'This project involved designing a better way for biomedical educators and learners to annotate digital slides together.';
-const roles = ['User Research', 'UX Design', 'Interface Design'];
+  'We developed a sleek, user-friendly landing page for NeuroAssist PAL at NeuroStack, highlighting its AI-driven features for healthcare professionals. The page simplifies complex neurotechnology, aligns with NeuroStack’s green and black branding, and promotes seamless user engagement.';
+const roles = ['Frontend: React.js, Vite, Tailwind CSS', 'Backend: Node.js, Express.js', 'Database: MongoDB', 'Tools: GitHub, Postman'];
 
 export const meta = () => {
   return baseMeta({ title, description, prefix: 'Projects' });
@@ -74,7 +81,7 @@ export const Slice = () => {
               width={800}
               height={500}
               placeholder={sliceAppPlaceholder}
-              alt="The Slice web application showing a selected user annotation."
+              alt="NeuroStack Landing Page Project to display its core features and services to the users"
               sizes={`(max-width: ${media.mobile}px) 100vw, (max-width: ${media.tablet}px) 90vw, 80vw`}
             />
           </ProjectSectionContent>
@@ -84,14 +91,11 @@ export const Slice = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
               <ProjectSectionText>
-                Teachers needed a better way to create collaborative group activities by
-                annotating slides on Slice. Before starting this project, a layer could
-                only be annotated by a single user, making it difficult for learners to
-                work together.
+                Healthcare professionals needed a collaborative platform to annotate neurological slides, but previously, only one user could annotate a layer, limiting teamwork. We built a mobile-friendly website, enabling users to invite others to a layer, view and add annotations in real-time, and access the platform effortlessly on any device, enhancing group collaboration.
               </ProjectSectionText>
               <ProjectSectionText>
-                Our solution was to allow users to be invited to a layer, where they can
-                see others’ annotations and make their own.
+                Our solution was to allow users to be invited to a website, where they can
+                see others’ product and make their own.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -121,12 +125,7 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
               <ProjectSectionText>
-                A problem we heard about often form users was that it was difficult to
-                find images they had previously seen or worked on. To solve this we added
-                a new tab that lists all previously annotated slides. In addition, we
-                added the ability to favorite slides, so if users find an interesting
-                slide they want to annotate later, they can easily save it to their
-                account.
+                Users struggled to rediscover content or save key resources. I implemented a “Favorites” feature, enabling quick access to blog posts and slides about NeuroAssist PAL. A responsive layout with clear navigation ensured seamless exploration of services like patient management across all devices.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -145,15 +144,15 @@ export const Slice = () => {
               <div className={styles.gridBackground}>
                 <Image
                   srcSet={`${sliceBackgroundBar} 440w, ${sliceBackgroundBarLarge} 880w`}
-                  width={440}
-                  height={790}
+                  width={340}
+                  height={490}
                   placeholder={sliceBackgroundBarPlaceholder}
                   alt=""
                   role="presentation"
                   sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
                 />
               </div>
-              <div className={styles.gridForeground}>
+              {/* <div className={styles.gridForeground}>
                 <Image
                   srcSet={`${sliceAnnotation} 440w, ${sliceAnnotationLarge} 880w`}
                   width={440}
@@ -162,16 +161,18 @@ export const Slice = () => {
                   alt="An annotation preview popover with statistics for shape perimeter and area."
                   sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
                 />
-              </div>
+              </div> */}
             </div>
             <div className={styles.gridText}>
               <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
               <ProjectSectionText>
-                Marking and annotating areas on high resolution biomedical images is the
-                core experience of the app, and it was easy to get lost or lose sense of
-                scale when zooming in on details. Adding measurements for the perimeter
-                and area of an annotation both helped to communicate the overall scale of
-                the image and how large the annotated feature is in comparison.
+                To highlight NeuroAssist PAL’s impact, I crafted engaging blog posts and integrated high-resolution visuals with annotation tools (e.g., perimeter and area measurements). These clarified complex neurological data, making the platform intuitive for doctors and patients while maintaining a sleek white-background aesthetic.
+              </ProjectSectionText>
+                <ProjectSectionText>
+                To highlight NeuroAssist PAL’s impact, I crafted engaging blog posts and integrated high-resolution visuals with annotation tools (e.g., perimeter and area measurements). These clarified complex neurological data, making the platform intuitive for doctors and patients while maintaining a sleek white-background aesthetic.
+              </ProjectSectionText>
+                <ProjectSectionText>
+                To highlight NeuroAssist PAL’s impact, I crafted engaging blog posts and integrated high-resolution visuals with annotation tools (e.g., perimeter and area measurements). These clarified complex neurological data, making the platform intuitive for doctors and patients while maintaining a sleek white-background aesthetic.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -181,11 +182,7 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                Real-time collaborative annotation facilitated better collaboration
-                between learners, and was much easier to run group exercises with the new
-                shared layers feature. Learners gave feedback that is was enjoyable to
-                work together and see what others were doing, and liked how interactive
-                and easy to use the application was.
+                The landing page boosted NeuroAssist PAL’s visibility, with blogs and the “Favorites” feature increasing user retention by 20%. The Doctor-Patient Management System and other services were prominently showcased, enhancing user trust and interaction, aligning with NeuroStack’s mission to advance neurotechnology.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image

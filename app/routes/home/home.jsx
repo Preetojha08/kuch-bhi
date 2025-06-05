@@ -58,8 +58,8 @@ export const links = () => {
 
 export const meta = () => {
   return baseMeta({
-    title: 'Designer + Developer',
-    description: `Design portfolio of ${config.name} — a product designer working on web & mobile apps with a focus on motion, experience design, and accessibility.`,
+    title: 'Portfolio',
+    description: `Design portfolio of ${config.name} — a Software or Code designer working on web & mobile apps with a focus on UI/UX, experience design, and accessibility.`,
   });
 };
 
@@ -71,6 +71,7 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const projectfour = useRef();
+  const projectfive = useRef();
   const details = useRef();
 
   useEffect(() => {
@@ -162,6 +163,7 @@ export const Home = () => {
           ],
         }}
       />
+
       <ProjectSummary
         id="project-3"
         sectionRef={projectThree}
@@ -187,7 +189,7 @@ export const Home = () => {
         }}
       />
 
-        <ProjectSummary
+      <ProjectSummary
         id="project-4"
         alternate
         sectionRef={projectfour}
@@ -214,6 +216,31 @@ export const Home = () => {
         }}
       />
       
+      <ProjectSummary
+        id="project-5"
+        sectionRef={projectfive}
+        visible={visibleSections.includes(projectThree.current)}
+        index={5}
+        title="Covid Soft Test"
+        description="A simple and responsive Android app providing real-time COVID-19 updates, safety guidelines, and nearby healthcare info. Built using Java, RESTful APIs, and SQL for reliable performance and accessibility."
+        buttonText="View project"
+        buttonLink="/projects/slice"
+        model={{
+          type: 'phone',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: `${foodAppTexture} 375w, ${foodAppTextureLarge} 750w`,
+              placeholder: foodAppTexturePlaceholder,
+            },
+            {
+              srcSet: `${foodAppTexture2} 800w, ${foodAppTexture2Large} 1920w`,
+              placeholder: foodAppTexture2Placeholder,
+            },
+          ],
+        }}
+      />
+
       <Profile
         sectionRef={details}
         visible={visibleSections.includes(details.current)}
