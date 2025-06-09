@@ -22,12 +22,12 @@ export const navLinks = [
 export const socialLinks = [
   {
     label: 'playstore',
-    url: `https://bsky.app/profile/${config.bluesky}`,
+    url: `https://play.google.com/store/apps/developer?id=${config.bluesky}`,
     icon: 'playstore',
   },
   {
     label: 'LinkedIn',
-    url: `https://www.figma.com/${config.figma}`,
+    url: `https://www.linkedin.com/in/${config.figma}`,
     icon: 'linkedin',
   },
   {

@@ -134,7 +134,7 @@ export const Home = () => {
         title="Neurostack Landing Page"
         description="Created a React-based landing page for NeuroStack with team info, project highlights, and contact section."
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="/projects/neurostack"
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
@@ -181,7 +181,7 @@ export const Home = () => {
         title="Food Catering"
         description="An online food catering app built with Java and PHP, featuring a sleek UI, user login, and admin panel for managing orders and menus."
         buttonText="View project"
-        buttonLink="/projects/neurostack"
+        buttonLink="/projects/smart-sparrow"
         model={{
           type: 'phone',
           alt: 'Annotating a biomedical image in the Slice app',
