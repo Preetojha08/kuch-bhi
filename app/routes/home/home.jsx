@@ -19,6 +19,15 @@ import foodAppTextureLarge from '~/assets/food2.png';
 import foodAppTexturePlaceholder from '~/assets/food2.png';
 import foodAppTexture from '~/assets/food2.png';
 
+import covidAppTexture2Large from '~/assets/Covid01.png';
+import covidAppTexture2Placeholder from '~/assets/Covid01.png';
+import covidAppTexture2 from '~/assets/Covid01.png';
+
+import covidAppTextureLarge from '~/assets/Covid02.png';
+import covidAppTexturePlaceholder from '~/assets/Covid02.png';
+import covidAppTexture from '~/assets/Covid02.png';
+
+
 import sliceTextureLarge from '~/assets/slice-app-large.jpg';
 import sliceTexturePlaceholder from '~/assets/slice-app-placeholder.jpg';
 import sliceTexture from '~/assets/slice-app.jpg';
@@ -172,7 +181,7 @@ export const Home = () => {
         title="Food Catering"
         description="An online food catering app built with Java and PHP, featuring a sleek UI, user login, and admin panel for managing orders and menus."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/neurostack"
         model={{
           type: 'phone',
           alt: 'Annotating a biomedical image in the Slice app',
@@ -224,18 +233,19 @@ export const Home = () => {
         title="Covid Soft Test"
         description="A simple and responsive Android app providing real-time COVID-19 updates, safety guidelines, and nearby healthcare info. Built using Java, RESTful APIs, and SQL for reliable performance and accessibility."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/neurostack"
         model={{
           type: 'phone',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: `${foodAppTexture} 375w, ${foodAppTextureLarge} 750w`,
-              placeholder: foodAppTexturePlaceholder,
+              srcSet: `${covidAppTexture} 800w, ${covidAppTextureLarge} 1920w`,
+              placeholder: covidAppTexturePlaceholder,
             },
             {
-              srcSet: `${foodAppTexture2} 800w, ${foodAppTexture2Large} 1920w`,
-              placeholder: foodAppTexture2Placeholder,
+              srcSet: `${covidAppTexture2} 375w, ${covidAppTexture2Large} 750w`,
+              placeholder: covidAppTexture2Placeholder,
+
             },
           ],
         }}

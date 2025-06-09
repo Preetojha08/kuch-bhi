@@ -6,17 +6,17 @@ import sliceAppLarge from '~/assets/NeuroStackLandingPage.png';
 import sliceAppPlaceholder from '~/assets/NeuroStackLandingPage.png';
 import sliceApp from '~/assets/NeuroStackLandingPage.png';  
 
-import sliceBackgroundBarLarge from '~/assets/NeuroStackblog.png';
-import sliceBackgroundBarPlaceholder from '~/assets/NeuroStackblog.png';
-import sliceBackgroundBar from '~/assets/NeuroStackblog.png';
+import sliceBackgroundBarLarge from '~/assets/NeuroStackwireframe.png';
+import sliceBackgroundBarPlaceholder from '~/assets/NeuroStackwireframe.png';
+import sliceBackgroundBar from '~/assets/NeuroStackwireframe.png';
 
 
 import sliceBackgroundLarge from '~/assets/NeuroStackBG.png';
 import sliceBackgroundPlaceholder from '~/assets/NeuroStackBG.png';
 import sliceBackground from '~/assets/NeuroStackBG.png';
 
-import sliceIrlPlaceholder from '~/assets/slice-irl-placeholder.jpg';
-import sliceIrl from '~/assets/slice-irl.jpg';
+import sliceIrlPlaceholder from '~/assets/NeuroStackProject.png';
+import sliceIrl from '~/assets/NeuroStackProject.png';
 import sliceSidebarAnnotationsLarge from '~/assets/NeuroStackMG.png';
 import sliceSidebarAnnotationsPlaceholder from '~/assets/NeuroStackMG.png';
 import sliceSidebarAnnotations from '~/assets/NeuroStackMG.png';
@@ -91,11 +91,10 @@ export const Slice = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
               <ProjectSectionText>
-                Healthcare professionals needed a collaborative platform to annotate neurological slides, but previously, only one user could annotate a layer, limiting teamwork. We built a mobile-friendly website, enabling users to invite others to a layer, view and add annotations in real-time, and access the platform effortlessly on any device, enhancing group collaboration.
+                Healthcare professionals needed an intuitive platform to work efficiently with neurological tools, but existing solutions were often cluttered and hard to navigate. To solve this, we built a responsive web application using React.js, Vite, and Tailwind CSS, ensuring seamless performance across devices from mobile phones to large desktops. Tailwind's utility first classes enabled precise control over layout and responsiveness. 
               </ProjectSectionText>
               <ProjectSectionText>
-                Our solution was to allow users to be invited to a website, where they can
-                see others’ product and make their own.
+                The backend was powered by Node.js, Express.js, and MongoDB, with tools like GitHub and Postman used for version control and API testing.
               </ProjectSectionText>
             </div>
             <div className={styles.sidebarImages}>
@@ -125,7 +124,7 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
               <ProjectSectionText>
-                Users struggled to rediscover content or save key resources. I implemented a “Favorites” feature, enabling quick access to blog posts and slides about NeuroAssist PAL. A responsive layout with clear navigation ensured seamless exploration of services like patient management across all devices.
+                To deliver a robust and efficient landing page, we chose React.js for its component-based architecture, enabling rapid development and a responsive UI for NeuroAssist PAL’s features. Postman streamlined API testing, ensuring seamless integration with the backend for services like the Doctor-Patient Management System, while Vite and Tailwind CSS optimized performance and styling across devices.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -166,13 +165,13 @@ export const Slice = () => {
             <div className={styles.gridText}>
               <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
               <ProjectSectionText>
-                To highlight NeuroAssist PAL’s impact, I crafted engaging blog posts and integrated high-resolution visuals with annotation tools (e.g., perimeter and area measurements). These clarified complex neurological data, making the platform intuitive for doctors and patients while maintaining a sleek white-background aesthetic.
+                To highlight NeuroStack’s website as impact, I designed the UI using a minimalist wireframe layout that prioritizes clarity and functionality. This approach ensures that the interface remains clean, focused, and user-friendly, making it easier for users—especially healthcare professionals—to engage with the platform’s features without distraction.
               </ProjectSectionText>
                 <ProjectSectionText>
-                To highlight NeuroAssist PAL’s impact, I crafted engaging blog posts and integrated high-resolution visuals with annotation tools (e.g., perimeter and area measurements). These clarified complex neurological data, making the platform intuitive for doctors and patients while maintaining a sleek white-background aesthetic.
+                The layout is organized into a structured grid, featuring a central hero section for key messaging, dedicated blocks for services, and a section to highlight blogs or updates. This design provides a strong visual hierarchy and intuitive navigation, catering to both doctors and patients with varying levels of tech familiarity.
               </ProjectSectionText>
                 <ProjectSectionText>
-                To highlight NeuroAssist PAL’s impact, I crafted engaging blog posts and integrated high-resolution visuals with annotation tools (e.g., perimeter and area measurements). These clarified complex neurological data, making the platform intuitive for doctors and patients while maintaining a sleek white-background aesthetic.
+                A white background was selected to reinforce a sleek, professional aesthetic, while subtle placeholders accommodate high-resolution visuals and interactive tools, such as perimeter and area measurements. This design simplifies the presentation of complex neurological data, making the platform accessible and easy to use across a diverse user base.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -182,7 +181,7 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                The landing page boosted NeuroAssist PAL’s visibility, with blogs and the “Favorites” feature increasing user retention by 20%. The Doctor-Patient Management System and other services were prominently showcased, enhancing user trust and interaction, aligning with NeuroStack’s mission to advance neurotechnology.
+                The landing page of NeuroStack significantly boosted the visibility of its key product, NeuroAssist PAL, with blog integration increasing user retention by 20%. The user-friendly design, along with dark mode support, enhanced engagement with features like the Doctor-Patient Management System—advancing NeuroStack’s mission in the field of neurotechnology.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
