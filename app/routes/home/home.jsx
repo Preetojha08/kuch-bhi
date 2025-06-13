@@ -155,7 +155,7 @@ export const Home = () => {
         title="Bank Application "
         description="A modern banking app clone built with Java, Kotlin, and Jetpack Compose, featuring improved UI/UX and added functionalities."
         buttonText="View Application"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="/projects/bankapp"
         model={{
           type: 'phone',
           alt: 'App login screen',
