@@ -1,14 +1,14 @@
-import sliceAnnotationLarge from '~/assets/slice-annotation-large.png';
-import sliceAnnotationPlaceholder from '~/assets/slice-annotation-placeholder.png';
-import sliceAnnotation from '~/assets/slice-annotation.png';
+import sliceAnnotationLarge from '~/assets/bankfirebaseSS.png';
+import sliceAnnotationPlaceholder from '~/assets/bankfirebaseSS.png';
+import sliceAnnotation from '~/assets/bankfirebaseSS.png';
 
 import sliceAppLarge from '~/assets/bankapp.png';
 import sliceAppPlaceholder from '~/assets/bankapp.png';
 import sliceApp from '~/assets/bankapp.png';  
 
-import sliceBackgroundBarLarge from '~/assets/NeuroStackwireframe.png';
-import sliceBackgroundBarPlaceholder from '~/assets/NeuroStackwireframe.png';
-import sliceBackgroundBar from '~/assets/NeuroStackwireframe.png';
+import sliceBackgroundBarLarge from '~/assets/bankhome.png';
+import sliceBackgroundBarPlaceholder from '~/assets/bankhome.png';
+import sliceBackgroundBar from '~/assets/bankhome.png';
 
 
 import sliceBackgroundLarge from '~/assets/bank_bg.png';
@@ -18,17 +18,17 @@ import sliceBackground from '~/assets/bank_bg.png';
 import sliceIrlPlaceholder from '~/assets/bankProject.png';
 import sliceIrl from '~/assets/bankProject.png';
 
-import sliceSidebarAnnotationsLarge from '~/assets/bankhome.png';
-import sliceSidebarAnnotationsPlaceholder from '~/assets/bankhome.png';
-import sliceSidebarAnnotations from '~/assets/bankhome.png';
+import sliceSidebarAnnotationsLarge from '~/assets/bank3profile.png';
+import sliceSidebarAnnotationsPlaceholder from '~/assets/bank3profile.png';
+import sliceSidebarAnnotations from '~/assets/bank3profile.png';
 
-import sliceSidebarLayersLarge from '~/assets/bank3profile.png';
-import sliceSidebarLayersPlaceholder from '~/assets/bank3profile.png';
-import sliceSidebarLayers from '~/assets/bank3profile.png';
+import sliceSidebarLayersLarge from '~/assets/bank4.png';
+import sliceSidebarLayersPlaceholder from '~/assets/bank4.png';
+import sliceSidebarLayers from '~/assets/bank4.png';
 
-import sliceSlidesLarge from '~/assets/NeuroStackSS.png';
-import sliceSlidesPlaceholder from '~/assets/NeuroStackSS.png';
-import sliceSlides from '~/assets/NeuroStackSS.png';
+import sliceSlidesLarge from '~/assets/bankwireframe.png';
+import sliceSlidesPlaceholder from '~/assets/bankwireframe.png';
+import sliceSlides from '~/assets/bankwireframe.png';
 import { Footer } from '~/components/footer';
 import { Image } from '~/components/image';
 import { Model } from '~/components/model'; // assuming this exists
@@ -51,8 +51,9 @@ import styles from './bankapp.module.css';
 
 const title = 'Mobile Banking Application ';
 const description =
-  'We developed a sleek, user-friendly landing page for NeuroAssist PAL at NeuroStack, highlighting its AI-driven features for healthcare professionals. The page simplifies complex neurotechnology, aligns with NeuroStack’s green and black branding, and promotes seamless user engagement.';
-const roles = ['Frontend: React.js, Vite, Tailwind CSS', 'Backend: Node.js, Express.js', 'Database: MongoDB', 'Tools: GitHub, Postman'];
+  'I developed a sleek, user-friendly Bank Android Application using Java in Android Studio, integrated with Firebase Cloud Database for secure data management. The app simplifies banking tasks, aligns with a modern, intuitive design featuring dynamic Light and Dark theme support, and promotes seamless user engagement for a diverse user base.';
+const roles = ['Frontend: Java, Kotlin, XML Layouts', 'Backend: Firebase Cloud Database', 'Local Storage: Shared Preferences', 'Tools: Gradle, GitHub, Postman'];
+
 
 export const meta = () => {
   return baseMeta({ title, description, prefix: 'Projects' });
@@ -93,11 +94,15 @@ export const Slice = () => {
             <div className={styles.imagesText}>
               <ProjectSectionHeading>Bringing it together</ProjectSectionHeading>
               <ProjectSectionText>
-                Healthcare professionals needed an intuitive platform to work efficiently with neurological tools, but existing solutions were often cluttered and hard to navigate. To solve this, we built a responsive web application using React.js, Vite, and Tailwind CSS, ensuring seamless performance across devices from mobile phones to large desktops. Tailwind's utility first classes enabled precise control over layout and responsiveness. 
+                Banking users needed a secure, intuitive mobile platform to manage their finances, but many existing solutions were complex or lacked seamless performance. To address this, I built a responsive Android application using Java and Android Studio, ensuring compatibility across devices from budget smartphones to high-end models. XML layouts enabled precise control over the user interface, delivering a clean and modern design. 
               </ProjectSectionText>
               <ProjectSectionText>
-                The backend was powered by Node.js, Express.js, and MongoDB, with tools like GitHub and Postman used for version control and API testing.
+                The backend was powered by Firebase Cloud Database for real-time data storage and retrieval, with Shared Preferences for efficient session management. Tools like Gradle and GitHub were used for build automation and version control.
               </ProjectSectionText>
+              <ProjectSectionText>
+                ♤ Persistent user sessions for seamless access.<br></br> ♡ Dynamic theme switching for easy accessibility.
+              </ProjectSectionText>
+
             </div>
             <div className={styles.sidebarImages}>
               <Image
@@ -129,7 +134,7 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Improving the experience</ProjectSectionHeading>
               <ProjectSectionText>
-                To deliver a robust and efficient landing page, we chose React.js for its component-based architecture, enabling rapid development and a responsive UI for NeuroAssist PAL’s features. Postman streamlined API testing, ensuring seamless integration with the backend for services like the Doctor-Patient Management System, while Vite and Tailwind CSS optimized performance and styling across devices.
+                The wireframe for my Bank Android Application showcases a sleek, user-friendly design developed using Java and Kotlin in Android Studio. This blueprint highlights four key screens—Login Details, Cards Details, Transaction Operations, and User Profile with Settings Options—integrated with Firebase Cloud Database for secure data management. Featuring a modern layout with Light and Dark theme support, it ensures an intuitive and accessible banking experience across devices.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
@@ -140,6 +145,7 @@ export const Slice = () => {
               alt="The new My Slides tab in slice, showing annotated and favorited slides."
               sizes={`(max-width: ${media.mobile}px) 500px, (max-width: ${media.tablet}px) 800px, 1000px`}
             />
+             
           </ProjectSectionContent>
         </ProjectSection>
         <ProjectSection padding="top">
@@ -149,29 +155,18 @@ export const Slice = () => {
                 <Image
                   srcSet={`${sliceBackgroundBar} 440w, ${sliceBackgroundBarLarge} 880w`}
                   width={340}
-                  height={490}
+                  height={390}
                   placeholder={sliceBackgroundBarPlaceholder}
                   alt=""
                   role="presentation"
                   sizes={`(max-width: ${media.mobile}px) 312px, (max-width: ${media.tablet}px) 408px, 514px`}
                 />
-                        {/* model={{
-                                type: 'phone',
-                                alt: 'App login screen',
-                                textures: [
-                                  {
-                                    srcSet: `${sliceBackgroundBar} 375w, ${sliceBackgroundBarLarge} 750w`,
-                                    placeholder: sliceBackgroundBarPlaceholder,
-                                  },
-                                  
-                                ],
-                              }} */}
               </div>
               {/* <div className={styles.gridForeground}>
                 <Image
                   srcSet={`${sliceAnnotation} 440w, ${sliceAnnotationLarge} 880w`}
                   width={440}
-                  height={340}
+                  height={140}
                   placeholder={sliceAnnotationPlaceholder}
                   alt="An annotation preview popover with statistics for shape perimeter and area."
                   sizes={`(max-width: ${media.mobile}px) 584px, (max-width: ${media.tablet}px) 747px, 556px`}
@@ -179,15 +174,15 @@ export const Slice = () => {
               </div> */}
             </div>
             <div className={styles.gridText}>
-              <ProjectSectionHeading>Meaningful details</ProjectSectionHeading>
+              <ProjectSectionHeading>Meaningful Details</ProjectSectionHeading>
               <ProjectSectionText>
-                To highlight NeuroStack’s website as impact, I designed the UI using a minimalist wireframe layout that prioritizes clarity and functionality. This approach ensures that the interface remains clean, focused, and user-friendly, making it easier for users—especially healthcare professionals—to engage with the platform’s features without distraction.
+               This activity displays the Cards Details screen of my Bank Android Application, built with Java in Android Studio and integrated with Firebase Cloud Database. The design, a clone of Scotiabank’s interface, features a modern dark theme with red accents, creating a user-friendly and visually appealing dashboard for logged-in users. Real-time data via Firebase keeps the balance and details current, aligning with banking app standards.
               </ProjectSectionText>
                 <ProjectSectionText>
-                The layout is organized into a structured grid, featuring a central hero section for key messaging, dedicated blocks for services, and a section to highlight blogs or updates. This design provides a strong visual hierarchy and intuitive navigation, catering to both doctors and patients with varying levels of tech familiarity.
+                The header includes a stylized "S" logo, a personalized "Welcome, Rahul Ojha" message, and navigation icons (search, profile, logout) for quick access. The card section highlights a balance of "36500.32" on a red graphic with a world map and chip icon, symbolizing secure financial data.
               </ProjectSectionText>
                 <ProjectSectionText>
-                A white background was selected to reinforce a sleek, professional aesthetic, while subtle placeholders accommodate high-resolution visuals and interactive tools, such as perimeter and area measurements. This design simplifies the presentation of complex neurological data, making the platform accessible and easy to use across a diverse user base.
+                The Services section offers eight icons (Move Money, Scene+ Details, Scotia Advice+, Credit Score, Manage Expense, Account Statements, Scotia Investments, Scotia iTRADE) for easy navigation. Buttons for Discover New Products and Offers and Programs (2), plus a "Let us know what you think!" banner, enhance engagement. This showcases my UI/UX and Android development skills for a portfolio.
               </ProjectSectionText>
             </div>
           </ProjectSectionContent>
@@ -197,7 +192,7 @@ export const Slice = () => {
             <ProjectTextRow>
               <ProjectSectionHeading>Project outcomes</ProjectSectionHeading>
               <ProjectSectionText>
-                The landing page of NeuroStack significantly boosted the visibility of its key product, NeuroAssist PAL, with blog integration increasing user retention by 20%. The user-friendly design, along with dark mode support, enhanced engagement with features like the Doctor-Patient Management System—advancing NeuroStack’s mission in the field of neurotechnology.
+                The Bank Android Application, crafted as a clone of Scotiabank’s interface, significantly enhances user engagement through its intuitive Cards Details screen, offering a seamless banking experience. The integration of Firebase Cloud Database ensures secure, real-time data management, building user trust and reliability. Personalized services, transaction options, and a feedback prompt improve usability and interaction, demonstrating my proficiency in UI/UX design and Android development, making it a strong addition to my portfolio.
               </ProjectSectionText>
             </ProjectTextRow>
             <Image
