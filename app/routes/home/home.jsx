@@ -181,7 +181,7 @@ export const Home = () => {
         title="Food Catering"
         description="An online food catering app built with Java and PHP, featuring a sleek UI, user login, and admin panel for managing orders and menus."
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="/projects/foodapp"
         model={{
           type: 'phone',
           alt: 'Annotating a biomedical image in the Slice app',
